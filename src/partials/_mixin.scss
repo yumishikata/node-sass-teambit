@@ -1,0 +1,19 @@
+// flex orizzontale
+
+@mixin flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// flex verticale 
+
+@mixin flex-column-between-center {
+   @include flex-between-center;
+    flex-direction: column;
+}
+
+@mixin flex-column-between-start {
+    @include flex-column-between-center;
+    align-items: flex-start;
+}

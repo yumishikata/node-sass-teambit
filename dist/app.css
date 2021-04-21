@@ -3,3 +3,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: #57402c;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #57402c;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  height: 10vh;
+  background-color: white;
+  width: 100%;
+  padding: 0 10%;
+}
+nav .container {
+  border-bottom: 1px solid #57402c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 90%;
+}
+nav ul i {
+  font-size: 80%;
+}
+
+.google-sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: block;
+  padding: 10px 5px;
+  border: 1px solid #2c4692;
+  border-radius: 5px;
+}
+.google-sign a {
+  color: #2c4692;
+}
+.google-sign img {
+  height: 15px;
+  vertical-align: middle;
+}
