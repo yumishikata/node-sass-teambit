@@ -1,11 +1,19 @@
 // flex orizzontale
-
-@mixin flex-between-center {
+@mixin flex-between-start {
     display: flex;
     justify-content: space-between;
+}
+@mixin flex-between-center {
+    @include flex-between-start;
     align-items: center;
 }
-
+@mixin flex-left {
+    display: flex;
+}
+@mixin flex-right {
+    display: flex;
+    justify-content: flex-end;
+}
 // flex verticale 
 
 @mixin flex-column-between-center {
@@ -14,6 +22,12 @@
 }
 
 @mixin flex-column-between-start {
-    @include flex-column-between-center;
-    align-items: flex-start;
+    @include flex-between-start;
+    flex-direction: column;
+}
+
+// Padding 80%
+
+@mixin padding-80 {
+    padding: 40px 10%;
 }

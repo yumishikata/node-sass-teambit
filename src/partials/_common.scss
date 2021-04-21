@@ -10,6 +10,7 @@ body {
     color: $fontColor;
     font-size: $fontSize;
     font-family: $fontFamily;
+    letter-spacing: 0.5px;
 }
 
 a {
@@ -19,5 +20,23 @@ a {
 
 li {
     list-style: none;
+}
+
+.accesso {
+    p {
+        display: inline;
+    }
+    a {
+        display: inline-block;
+        background-color: $blueColor;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    img {
+        height: 20px;
+        width: auto;
+        vertical-align: middle;
+    }
 }
 

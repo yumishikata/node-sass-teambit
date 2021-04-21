@@ -5,5 +5,95 @@
 @import 'partials/header';
 @import 'partials/footer';
 
+.traditional-modern {
+    @include padding-80;
+    background-color: $backgroundPrimary;
+    text-align: center;
+    img {
+        width: 300px;
+        height: auto;
+    }
+    .images {
+        @include flex-between-start;
+        padding-top: 40px;
+        padding-bottom: 100px;
+        font-size: 80%;
+        img {
+            height: 100px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+    }
+    .traditional {
+        border-bottom: 1px solid $fontColor;
+        padding: 0 5%;
+        padding-bottom: 100px;
+    }
+    .modern {
+        padding: 0 5%;
+        padding-top: 100px;
+        img {
+            margin-bottom: 100px;
+        }
+    }
+    
+}
 
+.screen {
+    padding: 40px 0;
+    div:nth-of-type(odd) {
+        @include flex-left;
+        padding-bottom: 20px;
+    }
+    div:nth-of-type(even) {
+        @include flex-right;
+        padding-bottom: 20px;
+    }
+    .text {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 140%;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 110%;
+            line-height: 25px;
+        }
+        a {
+            margin: 15px 0;
+            color: $blueColor;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+}
+
+.banner {
+    background-color: $backgroundPrimary;
+    height: 90vh;
+    @include flex-column-between-center;
+    @include padding-80;
+    .cit-text {
+        width: 60%;
+        height: 60%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $blueColor;
+        @include flex-column-between-start;
+        img {
+            height: 40px;
+        }
+    }
+}
 
